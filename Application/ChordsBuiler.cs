@@ -11,14 +11,6 @@ public class ChordsBuiler
         return new Chord(note.ToString(), note, tone);
     }
 
-    //D
-    //Db
-    //D#
-    //Dbm
-    //D#m
-    //Em
-    //!E#m
-    //Ebm
     public Chord ParseChord(string? chord)
     {
         if (string.IsNullOrWhiteSpace(chord) || chord.Length > 3)
