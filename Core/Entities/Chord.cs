@@ -10,6 +10,8 @@ public class Chord
 {
     public string Name { get; set; }
     public List<Note> Notes { get; set; } = null!;
+    public Note Tonic { get; set; }
+    public Tone Tone { get; set; }
 
     private Chord(string name)
     {
@@ -27,6 +29,8 @@ public class Chord
         };
 
         Notes = notes;
+        Tonic = tonic;
+        Tone = tone;
     }
 
     public override string ToString()
